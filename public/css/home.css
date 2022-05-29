@@ -1,0 +1,72 @@
+body{
+    background-color: var(--dark-blue);
+    padding: 0;
+}
+
+h1{
+    font-size: 40px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: left;
+    font-family: 'Archivo Black', sans-serif;
+    color: var(--dark-blue);
+}
+
+h2{
+    color: var(--white);
+    font-size: 26px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+h1 i{
+    font-style: normal;
+    padding: 4px 12px;
+    background-color: var(--dark-blue);
+    border-radius: 10px;
+    color: var(--white);
+}
+
+p{
+    text-align: left;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+#principal-image{
+    height: 450px;
+}
+
+#principal-card {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--dark-blue);
+}
+
+#principal-card::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: 0;
+    background-color: #fff;
+    background-image: linear-gradient(120deg, transparent 114px, var(--gray) 114px), linear-gradient(240deg, transparent 114px, var(--gray) 114px);
+    background-position: 10px 10px, 10px 10px;
+    background-size: 90px 89px;
+    transform: rotate(30deg);
+}
+
+#buy-now{
+    background-color: var(--orange);
+    border-radius: 4px;
+    padding: 8px;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#buy-now i{
+    height: 16px;
+}

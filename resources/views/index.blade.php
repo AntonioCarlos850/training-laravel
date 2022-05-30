@@ -30,8 +30,16 @@
     </section>
     <section class="row w-100 p-2 space-evenly">
         <h2 class="col-9">Novos lançamentos</h2>
-        @for ($i = 0; $i < 6; $i++)
-            <x-card></x-card>
-        @endfor
+        @foreach ($products as $product)
+            <x-card>
+                <x-slot name="image">
+                    {{$product->image}}
+                </x-slot>
+                <x-slot name="value">
+                    {{$product->value}}
+                </x-slot>
+                {{$product->name}}
+            </x-card>
+        @endforeach
     </section>
 @endsection

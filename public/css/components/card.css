@@ -7,7 +7,7 @@
 }
 
 .card .content:hover{
-    box-shadow: 4px 4px 1.5px var(--yellow);
+    box-shadow: 4px 4px .5px var(--yellow);
 }
 
 .card img{

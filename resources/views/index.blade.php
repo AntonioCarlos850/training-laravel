@@ -35,6 +35,9 @@
                 <x-slot name="image">
                     {{$product->image}}
                 </x-slot>
+                <x-slot name="slug">
+                    {{$product->slug}}
+                </x-slot>
                 <x-slot name="value">
                     {{$product->value}}
                 </x-slot>

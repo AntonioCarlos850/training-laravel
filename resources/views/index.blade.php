@@ -31,16 +31,7 @@
     <section class="row w-100 p-2 space-evenly">
         <h2 class="col-9">Novos lançamentos</h2>
         @foreach ($products as $product)
-            <x-card>
-                <x-slot name="image">
-                    {{$product->image}}
-                </x-slot>
-                <x-slot name="slug">
-                    {{$product->slug}}
-                </x-slot>
-                <x-slot name="value">
-                    {{$product->value}}
-                </x-slot>
+            <x-card :image="$product->image" :slug="$product->slug" :value="$product->value">
                 {{$product->name}}
             </x-card>
         @endforeach

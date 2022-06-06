@@ -16,8 +16,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'index'])->name('index');
+Route::get('/', [ProductController::class, 'index'])->name('index');
 
 Route::get('/product/{product:slug}',[ProductController::class,'show'])->name('product');
+
+Route::get('/search',[ProductController::class,'search'])->name('search');
 
 Route::get('category/{category:slug}',[CategoryController::class,'show'])->name('category');

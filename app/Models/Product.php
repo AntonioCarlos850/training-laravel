@@ -24,6 +24,10 @@ class Product extends Model
                 $query->where('slug',$category)
             )
         );
+
+        $query->when($filters['q'] ?? false,fn($query,$search)=>
+            $query->where('name','like', "%".$search."%")
+        );
     }
 
     public function category(){

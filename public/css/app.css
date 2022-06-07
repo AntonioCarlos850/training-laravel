@@ -14,7 +14,7 @@
     --yellow: #ffd60a;
     --gray: #efedec;
     --white: #fefcfb;
-    --dark-white: #f2f2f2;
+    --dark-white: #ececec;
 }
 
 body{
@@ -120,6 +120,14 @@ button:hover{
     padding: 2rem;
 }
 
+.p-3{
+    padding: 3rem;
+}
+
+.p-4{
+    padding: 4rem;
+}
+
 .py-1{
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -146,6 +154,14 @@ button:hover{
 
 .bg-white{
     background-color: var(--white);
+}
+
+.text-white{
+    color: var(--white);
+}
+
+.decoration-none{
+    text-decoration: none;
 }
 
 .col-1,.col-2,.col-25,.col-3,.col-4,

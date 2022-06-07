@@ -20,6 +20,7 @@ class CreateProductsTable extends Migration
             $table->string('slug');
             $table->decimal('value');
             $table->string('image');
+            $table->text('description');
             $table->timestamps();
             $table->softDeletes();
         });

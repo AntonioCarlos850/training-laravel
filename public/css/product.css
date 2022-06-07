@@ -1,3 +1,54 @@
 body{
     background-color: var(--blue);
 }
+
+aside{
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+    padding: 2rem;
+}
+
+h1{
+    color: var(--white);
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+main img{
+    width: 60%;
+}
+
+#buy{
+    display: block;
+    margin: 25% auto;
+    border-radius: 4px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 2rem;
+    padding: 1rem;
+    min-width: 90%;
+    transition: all .4s;
+}
+
+#buy:hover{
+    box-shadow: 3px 3px var(--dark-white);
+}
+
+#category{
+    color: var(--dark-white);
+}
+
+#initial{
+    background-color: var(--dark-blue);
+    border-radius: 4px;
+}
+
+#value{
+    color: var(--white);
+    font-size: 3.2rem;
+    font-weight: 700;
+    display: block;
+    width: fit-content;
+    margin-top: 15%;
+    margin-left: auto;
+}

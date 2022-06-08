@@ -3,7 +3,7 @@ body{
 }
 
 aside{
-    border: 1px solid var(--gray);
+    border: 2px solid var(--gray);
     border-radius: 4px;
     padding: 2rem;
 }

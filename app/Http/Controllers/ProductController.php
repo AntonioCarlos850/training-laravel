@@ -32,7 +32,7 @@ class ProductController extends Controller
 
     public function search(){
         return view('product.search',[
-            "products"=>Product::latest()->filter(request(['category','q']))->get()
+            "products"=>Product::latest()->filter(request(['category','q']))->paginate(15)
         ]);
     }
 }

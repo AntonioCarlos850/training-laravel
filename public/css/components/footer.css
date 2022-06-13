@@ -1,0 +1,11 @@
+footer{
+    height: 50px;
+}
+
+footer span{
+    font-size: 1.3rem;
+}
+
+footer a{
+    display: flex;
+}

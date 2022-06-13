@@ -5,8 +5,9 @@
 @endpush
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('/css/home.css') }}">
+    <link rel="stylesheet" href="{{asset('/css/home.css') }}">
     <link rel="stylesheet" href="{{asset('/css/components/card.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/components/pagination.css')}}">
 @endpush
 
 @section('content')
@@ -17,5 +18,6 @@
                 {{$product->name}}
             </x-card>
         @endforeach
+        {{ $products->links() }}
     </section>
 @endsection

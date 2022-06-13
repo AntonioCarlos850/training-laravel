@@ -274,6 +274,10 @@ button:hover{
     align-items: center;
 }
 
+#content{
+    min-height: 92vh;
+}
+
 @media screen and (max-width: 1000px){
 
     .hidden-mobile{

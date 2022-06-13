@@ -11,7 +11,9 @@
 </head>
 <body>
     <x-navbar />
-    @yield('content')
+    <div id="content">
+        @yield('content')
+    </div>
     <x-footer />
 </body>
 </html>

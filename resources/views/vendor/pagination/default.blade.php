@@ -1,6 +1,6 @@
 @if ($paginator->hasPages())
-    <nav class="row w-100 right">
-        <ul class="pagination row col-dt-2 col-mb-10 space-evenly">
+    <nav class="row w-100 center">
+        <ul class="pagination row col-dt-2 col-mb-5 space-evenly">
             {{-- Previous Page Link --}}
             @if ($paginator->onFirstPage())
                 <li class="disabled" aria-disabled="true" aria-label="@lang('pagination.previous')">

@@ -1,5 +1,5 @@
 footer{
-    height: 50px;
+    min-height: 8vh;
 }
 
 footer span{
@@ -8,4 +8,10 @@ footer span{
 
 footer a{
     display: flex;
+}
+
+@media screen and (max-width:1000px) {
+    footer{
+        min-height: 5vh;
+    }
 }

@@ -4,7 +4,7 @@
         <h3>{{$slot}}</h3>
         <div class="row space-between data col-10">
             <span>$ {{$value}}</span>
-            <button>Comprar</button>
+            <button>Ver</button>
         </div>
     </a>
 </article>

@@ -20,7 +20,7 @@ class ProductFactory extends Factory
             'value'=>$this->faker->randomNumber(3),
             'slug'=>$this->faker->slug(),
             'category_id' => Category::factory(),
-            'description' => $this->faker->text(),
+            'description' => $this->faker->paragraphs(6,true),
             'image'=>"https://www.pngall.com/wp-content/uploads/2/White-Sneakers-PNG-Clipart.png"
         ];
     }

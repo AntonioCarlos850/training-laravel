@@ -1,6 +1,6 @@
 <header class="w-100 p-0 row bg-white" id="principal-card">
     <div class="col-5 row center">
-        <img id="principal-image" src="https://www.pngmart.com/files/1/Nike-Shoes-Transparent-PNG.png"
+        <img id="principal-image" src="https://www.transparentpng.com/thumb/adidas-shoes/a4xO3G-adidas-shoes-adidas-shoe-kids-superstar-daddy-grade.png"
         alt="nike shoes">
     </div>
     <div class="col-5 row center">

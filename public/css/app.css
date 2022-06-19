@@ -24,6 +24,7 @@ body{
     margin: 0;
     max-width: 100vw;
     overflow-x: hidden;
+    background-color: var(--dark-blue);
 }
 
 button:hover{
@@ -112,6 +113,10 @@ button:hover{
 
 .mx-2{
     margin: 0 2rem;
+}
+
+.mb-1{
+    margin-bottom: 1rem;
 }
 
 .p-1{
@@ -276,6 +281,18 @@ button:hover{
 
 #content{
     min-height: 92vh;
+}
+
+.principal-button{
+    display: block;
+    border-radius: 4px;
+    background-color: var(--orange);
+    color: var(--white);
+    transition: all .4s;
+}
+
+.principal-button:hover{
+    box-shadow: 3px 3px var(--dark-white);
 }
 
 @media screen and (max-width: 1000px){

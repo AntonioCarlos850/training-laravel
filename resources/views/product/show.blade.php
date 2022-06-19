@@ -20,7 +20,16 @@
             <span id="category">{{$product->category->name}}</span>
             <h1>{{$product->name}}</h1>
             <span id="value">$ {{$product->value}}</span>
-            <button id="buy">Comprar Agora</button>
+            <a href="#" class="decoration-none"><button id="buy">Ver Agora</button></a>
         </aside>
+        <article id="description" class="col-10 my-2 p-1 text-white">
+            <h2 class="mb-1">Descrição</h2>
+            <p>
+                {{$product->description}}
+            </p>
+        </article>
+        <article id="comments" class="col-10 my-2 p-1 text-white">
+            <h2>Comentários</h2>
+        </article>
     </section>
 @endsection

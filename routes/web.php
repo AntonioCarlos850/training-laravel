@@ -3,6 +3,7 @@
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\SessionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,3 +22,11 @@ Route::get('/', [ProductController::class, 'index'])->name('index');
 Route::get('/product/{product:slug}',[ProductController::class,'show'])->name('product');
 
 Route::get('/search',[ProductController::class,'search'])->name('search');
+
+Route::get('/register',[SessionController::class,'create'])->name('register');
+Route::post('/register',[SessionController::class,'store'])->name('create-user');
+
+Route::get('/login',[SessionController::class,'show'])->name('login');
+Route::post('/login',[SessionController::class,'attempt'])->name('login');
+
+Route::get('/logout',[SessionController::class,'destroy'])->name('logout');

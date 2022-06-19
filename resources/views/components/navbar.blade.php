@@ -7,4 +7,5 @@
             <i class="fa-solid fa-magnifying-glass"></i>
         </button>
     </form>
+    <x-log-buttons />
 </nav>

@@ -1,7 +1,3 @@
-body{
-    background-color: var(--blue);
-}
-
 aside{
     border: 2px solid var(--gray);
     border-radius: 4px;
@@ -20,7 +16,7 @@ main img{
 
 #buy{
     display: block;
-    margin: 25% auto;
+    margin: 15% auto;
     border-radius: 4px;
     background-color: var(--orange);
     color: var(--white);
@@ -39,7 +35,7 @@ main img{
 }
 
 #initial{
-    background-color: var(--dark-blue);
+    background-color: var(--blue);
     border-radius: 4px;
 }
 
@@ -51,4 +47,9 @@ main img{
     width: fit-content;
     margin-top: 15%;
     margin-left: auto;
+}
+
+#description,
+#comments{
+    border-top: 1px solid var(--gray);
 }

@@ -63,7 +63,8 @@ class SessionController extends Controller
                 'credential' => 'As credenciais de login estão incorretas'
             ]);
         }
-
+        
+        session()->regenerate();
         return redirect()->route('index');
     }
 

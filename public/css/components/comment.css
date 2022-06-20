@@ -1,0 +1,43 @@
+#title{
+    border: 1px solid var(--dark-gray);
+    border-radius: 4px;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+#body{
+    resize: none;
+    border: 1px solid var(--dark-gray);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+#send-comment{
+    font-size: 1.2rem;
+    width: 25%;
+    margin: auto;
+    padding: .3rem;
+}
+
+.comment{
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+    background-color: var(--gray);
+    color: var(--black);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.comment-title{
+    font-size: large;
+    font-family: 'Roboto', serif, monospace;
+}
+
+.author,time{
+    display: flex;
+    justify-content: end;
+}
+
+time{
+    margin-bottom: .875rem;
+}

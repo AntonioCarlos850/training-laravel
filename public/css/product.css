@@ -53,3 +53,7 @@ main img{
 #comments{
     border-top: 1px solid var(--gray);
 }
+
+#comments{
+    margin-top: 2rem;
+}

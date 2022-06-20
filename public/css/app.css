@@ -167,6 +167,10 @@ button:hover{
     color: var(--white);
 }
 
+.text-right{
+    text-align: right;
+}
+
 .decoration-none{
     text-decoration: none;
 }

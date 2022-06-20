@@ -6,6 +6,7 @@
 
 @push('styles')
     <link rel="stylesheet" href="{{asset('css/product.css')}}">
+    <link rel="stylesheet" href="{{asset('css/components/comment.css')}}">
 @endpush
 
 @section('content')
@@ -28,8 +29,22 @@
                 {{$product->description}}
             </p>
         </article>
-        <article id="comments" class="col-10 my-2 p-1 text-white">
+        <article id="comments" class="col-10 p-1 text-white">
             <h2>Comentários</h2>
+            @auth
+                <div class="col-10 row direction-column center">
+                    @include('comment._create-form')
+                </div>
+            @endauth
+            @if ($product->comments->count())
+                <section class="row col-10 space-around">
+                    @foreach ($product->comments as $comment)
+                        <x-comment :comment="$comment" />
+                    @endforeach
+                </section>
+            @else
+                <h4>Nenhum comentário sobre esse produto até o momento...</h4>
+            @endif
         </article>
     </section>
 @endsection

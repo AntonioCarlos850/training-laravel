@@ -50,6 +50,10 @@
     background-color: var(--orange);
 }
 
+#hello{
+    font-family: 'Roboto', sans-serif;
+}
+
 @media screen and (max-width: 1000px){
     #navbar{
         min-height: 3vh;

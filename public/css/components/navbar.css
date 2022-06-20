@@ -54,6 +54,20 @@
     font-family: 'Roboto', sans-serif;
 }
 
+#navbar .user-buttons{
+    background-color: var(--gray);
+    border: 1px solid var(--dark-gray);
+    border-radius: 4px;
+    color: var(--black);
+    text-decoration: none;
+    padding: .35rem;
+    margin: 0 .5rem;
+}
+
+#navbar .user-buttons:hover{
+    box-shadow: 0 0 2px 1.5px var(--dark-gray);
+}
+
 @media screen and (max-width: 1000px){
     #navbar{
         min-height: 3vh;

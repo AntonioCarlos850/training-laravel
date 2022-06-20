@@ -22,12 +22,12 @@ Route::get('/product/{product:slug}',[ProductController::class,'show'])->name('p
 
 Route::get('/search',[ProductController::class,'search'])->name('search');
 
-Route::get('/register',[SessionController::class,'create'])->name('register');
-Route::post('/register',[SessionController::class,'store'])->name('create-user');
+Route::get('/register',[SessionController::class,'create'])->name('register')->middleware('guest');
+Route::post('/register',[SessionController::class,'store'])->name('create-user')->middleware('guest');
 
-Route::get('/login',[SessionController::class,'show'])->name('login');
-Route::post('/login',[SessionController::class,'attempt'])->name('login');
+Route::get('/login',[SessionController::class,'show'])->name('login')->middleware('guest');
+Route::post('/login',[SessionController::class,'attempt'])->name('login')->middleware('guest');
 
-Route::post('/product/{product:slug}/comment',CommentController::class)->name('create-comment');
+Route::post('/product/{product:slug}/comment',CommentController::class)->name('create-comment')->middleware('auth');
 
-Route::get('/logout',[SessionController::class,'destroy'])->name('logout');
+Route::get('/logout',[SessionController::class,'destroy'])->name('logout')->middleware('auth');

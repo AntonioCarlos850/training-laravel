@@ -17,6 +17,9 @@
             <input type="email" name="email" id="email" value="{{old('email')}}">
             <label for="password">Password</label>
             <input type="password" name="password" id="password">
+            <div class="align-center row">
+                <input type="checkbox" name="remember" id="remember" class="m-0"><label for="remember" class="m-0 ">Lembrar</label>
+            </div>
             <button type="submit" id="submit" class="principal-button">Registrar</button>
             <x-handling />
         </form>

@@ -55,8 +55,10 @@ class SessionController extends Controller
     public function attempt(LoginRequest $request)
     {
         $attributes = $request->validated();
+        $remember = $attributes['remember'];
+        unset($attributes['remember']);
 
-        if(!auth()->attempt($attributes)){
+        if(!auth()->attempt($attributes,$remember)){
             return back()->withInput(
                 $request->except('password')
             )->withErrors([

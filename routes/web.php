@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SessionController;
@@ -31,4 +32,8 @@ Route::middleware('guest')->group(function(){
 Route::middleware('auth')->group(function(){
     Route::post('/product/{product:slug}/comment',CommentController::class)->name('create-comment');
     Route::get('/logout',[SessionController::class,'destroy'])->name('logout');
+
+    Route::middleware('can:admin')->group(function(){
+        Route::resource('admin',AdminController::class)->except('show');
+    });
 });

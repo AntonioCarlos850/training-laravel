@@ -123,6 +123,10 @@ button:hover{
     margin-bottom: 1rem;
 }
 
+.p-0{
+    padding: 0;
+}
+
 .p-1{
     padding: 1rem;
 }
@@ -277,9 +281,9 @@ button:hover{
 
 .left{
     justify-content: left;
-    align-items: center;
+    align-items: start;
     align-self: center;
-    align-content: center;
+    align-content: start;
     text-align: left;
 }
 

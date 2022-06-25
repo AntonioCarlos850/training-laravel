@@ -1,0 +1,43 @@
+#content{
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.product-item{
+    background-color: var(--blue);
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border-radius: 4px;
+}
+
+.product-item a,
+.product-item button{
+    padding: .5rem;
+    font-size: 1.3rem;
+}
+
+.product-item a:hover,
+.product-item button:hover{
+    filter: brightness(1.50);
+}
+
+.product-item a{
+    text-decoration: none;
+}
+
+.product-item button{
+    background-color: transparent;
+}
+
+.product-item form{
+    margin-left: 1rem;
+    display: inline;
+}
+
+.product-item .edit{
+    color: var(--green);
+}
+
+.product-item .delete{
+    color: var(--red);
+}

@@ -11,7 +11,7 @@
             </li>
             <li class="my-1 w-100">
                 <a href="{{route('admin.create')}}" 
-                    class="decoration-none w-100 {{request()->is('admin.create') ? 'link-2' : 'link-1'}}"
+                    class="decoration-none w-100 {{request()->is('admin/create') ? 'link-2' : 'link-1'}}"
                 >Novo Produto</a>
             </li>
         </ul>

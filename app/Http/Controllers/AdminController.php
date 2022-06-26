@@ -110,6 +110,8 @@ class AdminController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Product::find($id)->delete();
+
+        return redirect()->route("admin.index")->withSuccess("Produto Excluido com sucesso");
     }
 }

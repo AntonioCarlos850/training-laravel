@@ -6,8 +6,9 @@
         <a href="{{route('admin.edit',$product->id)}}" class="edit">
             <i class="fa-solid fa-pen"></i>
         </a>
-        <form action="{{route('admin.destroy',$product->id)}}" method="post">
-            @method('DELETE')
+        <form action="{{route('admin.destroy',$product->id)}}" method="POST">
+            @csrf
+            @method("DELETE")
             <button type="submit" class="delete">
                 <i class="fa-solid fa-trash"></i>
             </button>

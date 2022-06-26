@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
 
@@ -29,6 +30,10 @@ class AppServiceProvider extends ServiceProvider
 
         Gate::define('admin',function(){
             return auth()->user()?->id == 1;
+        });
+
+        Blade::if("admin",function(){
+            return request()->user()?->id == 1;
         });
     }
 }

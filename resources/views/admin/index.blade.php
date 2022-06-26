@@ -8,6 +8,9 @@
 @section('content')
     <div>
         <h1 class="text-white">Todos os produtos</h1>
+        <div class="col-3 my-1">
+            <x-handling></x-handling>
+        </div>
         <section>
             <ul class="w-100 p-0 m-0">
                 @foreach ($products as $product)

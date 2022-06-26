@@ -20,7 +20,7 @@
             <div class="align-center row">
                 <input type="checkbox" name="remember" id="remember" class="m-0"><label for="remember" class="m-0 ">Lembrar</label>
             </div>
-            <button type="submit" id="submit" class="principal-button">Registrar</button>
+            <button type="submit" id="submit" class="principal-button">Entrar</button>
             <x-handling />
         </form>
     </main>

@@ -25,5 +25,3 @@ Projeto aberto para ajuda!
 [![LICENSA](https://img.shields.io/badge/GPL3-license-green)](/LICENSE)
 
 Copyright © 2022 - [Antonio Carlos](https://github.com/AntonioCarlos850)
-
-A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste arquivo, com restrição de publicar como SEU repositório. Porém, sem restrição nos direitos de usar, copiar, modificar e mesclar.

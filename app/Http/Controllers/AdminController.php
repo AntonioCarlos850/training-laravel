@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreProductRequest;
+use App\Http\Requests\UpdateProductRequest;
 use Illuminate\Support\Str;
 use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class AdminController extends Controller
 {
@@ -37,7 +39,7 @@ class AdminController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  App\Http\Requests\StoreProductRequest  $request
+     * @param  \App\Http\Requests\StoreProductRequest  $request
      * @return \Illuminate\Http\Response
      */
     public function store(StoreProductRequest $request)
@@ -63,21 +65,41 @@ class AdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(int $id)
     {
-        //
+        return view("admin.edit", [
+            "product" => Product::find($id),
+            "categories" => Category::all()
+        ]);
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Http\Requests\UpdateProductRequest  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateProductRequest $request, $id)
     {
-        //
+        $attributes = $request->validated();        
+
+        $produto = Product::find($id);
+        $produto->update([
+            "name" => $attributes["name"],
+            "value" => $attributes["value"],
+            "description" => $attributes["description"],
+            "category_id" => $attributes["category"],
+            "slug" => Str::slug($attributes["name"]),
+        ]);
+
+        if($request->file("image")){
+            Storage::disk("public")->delete(Str::remove("/storage",$produto->image));
+            $produto->image = "/storage/".$request->file("image")->store("/products","public");
+            $produto->save();
+        }
+
+        return back()->withSuccess("Produto editado com sucesso");
     }
 
     /**

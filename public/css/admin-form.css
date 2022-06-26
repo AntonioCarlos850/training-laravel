@@ -58,6 +58,7 @@ form button{
     width: fit-content;
     border-radius: 4px;
     transition: all .2s;
+    max-height: 2.25rem;
 }
 
 #image-label:hover{

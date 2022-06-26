@@ -15,7 +15,7 @@ class ProductController extends Controller
     public function index()
     {
         return view('product.index',[
-            "products"=>Product::take(12)->orderBy('created_at')->get()
+            "products"=>Product::take(12)->orderByDesc('created_at')->get()
         ]);
     }
 

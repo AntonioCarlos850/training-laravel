@@ -1,6 +1,6 @@
 <p align="center"><a href="https://laracasts.com/series/laravel-8-from-scratch/" target="_blank"><img src="https://www.freelogovectors.net/wp-content/uploads/2018/03/laracasts-logo.png" width="400"></a></p>
 
-## 🤝 Sobre o Projeto
+## ❔ Sobre o Projeto
 
 O projeto foi criado com o objetivo de implementar os conceitos ensinados no curso Laravel 8 From Scratch, com base nos ensinamentos construí uma vitrine, além disso, tentei implementar um esquema de cores difente do preto e branco muito saturado na web. O projeto foi feito apenas para estudo pessoal.
 

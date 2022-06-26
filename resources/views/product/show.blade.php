@@ -15,7 +15,7 @@
             <a class="text-white decoration-none left" href="{{route('search',["category"=>$product->category->slug])}}"><h2>{{$product->category->name}}</h2></a>
         </nav>
         <main class="col-dt-6 col-mb-10 center">
-            <img src="{{$product->image}}" alt="" class="my-2">
+            <img src="{{asset($product->image)}}" alt="" class="my-2">
         </main>
         <aside class="col-dt-4 col-mb-10">
             <span id="category">{{$product->category->name}}</span>

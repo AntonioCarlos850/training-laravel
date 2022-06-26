@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreProductRequest;
+use Illuminate\Support\Str;
+use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -15,7 +18,7 @@ class AdminController extends Controller
     public function index()
     {
         return view('admin.index',[
-            "products" => Product::latest()->paginate(10)
+            "products" => Product::latest()->paginate(10),
         ]);
     }
 
@@ -26,18 +29,32 @@ class AdminController extends Controller
      */
     public function create()
     {
-        return view('admin.create');
+        return view('admin.create',[
+            "categories" => Category::all(),
+        ]);
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  App\Http\Requests\StoreProductRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreProductRequest $request)
     {
-        //
+        $attributes = $request->validated();
+        $path = $request->file("image")->store("/products","public");
+
+        Product::create([
+            "name" => $attributes["name"],
+            "value" => $attributes["value"],
+            "description" => $attributes["description"],
+            "category_id" => $attributes["category"],
+            "slug" => Str::slug($attributes["name"]),
+            "image" => "/storage/".$path,
+        ]);
+
+        return back()->withSuccess("Produto criado com sucesso");
     }
 
     /**

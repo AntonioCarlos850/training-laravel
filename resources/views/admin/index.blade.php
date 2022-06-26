@@ -6,7 +6,7 @@
 @endpush
 
 @section('content')
-    <div class="p-1">
+    <div>
         <h1 class="text-white">Todos os produtos</h1>
         <section>
             <ul class="w-100 p-0 m-0">

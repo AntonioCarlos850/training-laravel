@@ -1,0 +1,66 @@
+main{
+    margin-top: 1rem;
+}
+
+label{
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+}
+
+textarea{
+    resize: none;
+    height: 6rem;
+}
+
+input,
+select{
+    height: 2rem;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+select{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+input,
+textarea,
+select{
+    border: 1px solid var(--dark-gray);
+    border-radius: 4px;
+    margin-bottom: .975rem;
+}
+
+main form{
+    border-radius: 8px;
+    border: 1px solid var(--gray);
+    background-color: var(--white);
+    justify-content: left;
+    text-align: left;
+}
+
+form button{
+    font-size: 1.3rem;
+    width: 30%;
+    padding: .5rem;
+    margin: 1.5rem auto;
+}
+
+#image-label{
+    padding: .3rem;
+    font-family: "Roboto",serif;
+    font-size: 1.4rem;
+    background-color: var(--black);
+    color: var(--white);
+    width: fit-content;
+    border-radius: 4px;
+    transition: all .2s;
+}
+
+#image-label:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 2px 2px var(--dark-gray);
+}

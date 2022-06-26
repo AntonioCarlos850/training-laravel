@@ -21,7 +21,7 @@ class ProductFactory extends Factory
             'slug'=>$this->faker->slug(),
             'category_id' => Category::factory(),
             'description' => $this->faker->paragraphs(6,true),
-            'image'=>"https://www.pngall.com/wp-content/uploads/2/White-Sneakers-PNG-Clipart.png"
+            'image'=> $this->faker->imageUrl()
         ];
     }
 }

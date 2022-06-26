@@ -13,7 +13,7 @@
 </head>
 <body class="row">
     <x-sidebar class="col-2" id="sidebar"></x-sidebar>
-    <div id="content" class="col-8">
+    <div id="content" class="col-8 p-1">
         @yield('content')
     </div>
 </body>

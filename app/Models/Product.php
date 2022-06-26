@@ -16,7 +16,8 @@ class Product extends Model
         'value',
         'slug',
         'image',
-        'description'
+        'description',
+        'category_id'
     ];
 
     public function scopeFilter($query,$filters){

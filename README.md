@@ -22,7 +22,7 @@ Projeto aberto para ajuda!
 
 
 ## 🔖 Licensa
-[![LICENSA](https://img.shields.io/badge/Custom_GPL_3.0-E58080?style=for-the-badge&logo=bookstack&logoColor=white)](/LICENSE)
+[![LICENSA](https://img.shields.io/badge/GPL3-license-green)](/LICENSE)
 
 Copyright © 2022 - [Antonio Carlos](https://github.com/AntonioCarlos850)
 

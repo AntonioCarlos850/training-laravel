@@ -36,3 +36,14 @@
 .product-item .delete{
     color: var(--red);
 }
+
+@media screen and (max-width: 1000px){
+    h1{
+        font-size: 3rem;
+    }
+
+    .product-item a,
+    .product-item button{
+        font-size: 2rem;
+    }
+}

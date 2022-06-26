@@ -57,3 +57,21 @@ main img{
 #comments{
     margin-top: 2rem;
 }
+
+@media screen and (max-width: 1000px){
+    #description,
+    #comments,
+    #category{
+        font-size: 2rem;
+    }
+
+    #buy{
+        margin: 7% auto;
+        font-size: 2.3rem;
+        font-weight: 700;
+    }
+
+    #value{
+        margin-top: 7%;
+    }
+}

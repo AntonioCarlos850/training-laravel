@@ -12,8 +12,8 @@
     <title>E-commerce | @stack('name')</title>
 </head>
 <body class="row">
-    <x-sidebar class="col-2" id="sidebar"></x-sidebar>
-    <div id="content" class="col-8 p-1">
+    <x-sidebar class="col-dt-2 col-mb-3" id="sidebar"></x-sidebar>
+    <div id="content" class="col-dt-8 col-mb-7 p-1">
         @yield('content')
     </div>
 </body>

@@ -41,3 +41,31 @@
 time{
     margin-bottom: .875rem;
 }
+
+@media screen and (max-width: 1000px){
+    .comment-title{
+        font-size: 2rem;
+    }
+
+    #comments form{
+        font-size: 3rem;
+    }
+
+    #send-comment{
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin: 5% auto;
+    }
+
+    #title{
+        height: 3rem;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    #body{
+        min-height: 6rem;
+        font-size: 2rem;
+        resize: none;
+    }
+}

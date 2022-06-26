@@ -41,3 +41,17 @@
     color: var(--orange);
     font-weight: 500;
 }
+
+@media screen and (max-width: 1000px){
+    .card h3{
+        font-size: 40px;
+    }
+
+    .card .data span{
+        font-size: 30px;
+    }
+
+    .card .data button{
+        font-size: 30px;
+    }
+}

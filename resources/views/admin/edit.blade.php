@@ -11,7 +11,7 @@
             action="{{route('admin.update',$product->id)}}" 
             method="POST" 
             enctype="multipart/form-data"
-            class="col-dt-6 col-mb-8 row direction-column p-1"
+            class="col-dt-6 col-mb-10 row direction-column p-1"
         >
             @csrf
             @method("PATCH")

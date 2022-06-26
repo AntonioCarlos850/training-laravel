@@ -70,6 +70,26 @@
 
 @media screen and (max-width: 1000px){
     #navbar{
-        min-height: 3vh;
+        min-height: 4vh;
+        padding: .3rem;
+    }
+
+    #navbar .user-buttons,
+    #hello{
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    #navbar input,
+    #navbar button{
+        height: 3rem;
+    }
+
+    #navbar input{
+        font-size: 2rem;
+    }
+
+    #navbar img{
+        width: 300px;
     }
 }

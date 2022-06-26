@@ -310,6 +310,9 @@ button:hover{
 }
 
 @media screen and (max-width: 1000px){
+    #content{
+        min-height: 91vh;
+    }
 
     .hidden-mobile{
         display: none !important;

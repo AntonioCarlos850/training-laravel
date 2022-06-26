@@ -65,3 +65,30 @@ p{
 #buy-now i{
     height: 16px;
 }
+
+@media screen and (max-width: 1000px){
+    #principal-card {
+        padding: 1rem 0;
+    }
+
+    h1{
+        font-size: 55px;
+    }
+
+    h1 i{
+        display: block;
+        width: 100%;
+    }
+
+    p{
+        font-size: 25px;
+    }
+
+    #buy-now{
+        font-size: 25px;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+}
